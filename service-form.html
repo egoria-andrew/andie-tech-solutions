@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Service Intake portal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        
+        <h1>SERVICE REQUEST FORM</h1>
+        <hr width="40%">
+
+        <form method="POST" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Client's Details</legend>
+                    <table cellpadding="10">
+                    <tr>
+                        <td><label for="name">Full Name:* </label></td>
+                        <td><input type="text" id="name" name="full_name" placeholder="Enter Full name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="number">WhatsApp Number:* </label></td>
+                        <td><input type="tel" id="number" name="contact" placeholder="e.g 07xxxxx" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="brand">Laptop Brand: </label></td>
+                        <td>
+                            <input type="text" id="brand" name="Laptop_brand" list="brands-list" placeholder="Type or select your laptop brand" required>
+                            <datalist id="brands-list">
+                                <option value="Dell">
+                                <option value="HP">
+                                <option value="Lenovo">
+                                <option value="Asus">
+                                <option value="Apple">
+                                <option value="Samsung">
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="os">Operating System: </label></td>
+                        <td>
+                            <select name="operating_system" class="os" required>
+                            <option value="">--Select your OS--</option>
+                            <option value="Windows_11">Windows 11</option>
+                            <option value="Windows_10">Windows 10</option>
+                            <option value="kali_linux">Kali Linux</option>
+                            <option value="linux_mint">Linux Mint</option>
+                            <option value="MacOS">MacOS</option>
+                            <option value="other">Other</option>
+                        </td>
+                    </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Services Required</legend>
+                    <table cellpadding="5px">
+                        <tr>
+                            <td><label for="">Primary Issue:</label></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="radio" id="issue" name="primary_issue" id="os" value="OS_installation" required>
+                                <label for="OS">Operating System Installation</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" name="primary_issue" id="password" value="password_reset" required>
+                                <label for="password">Password Reset</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="radio" name="primary_issue" id="tuning" value="System_tuning" required>
+                                <label for="tuning">System Tuning/Optimization</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" name=" primary_issue" id="customization" value="windows_customization" required>
+                                <label for="customization">Windows Customization</label>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td><label for="additional_fixes">Additional Fixes: </label></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="software_activation" id="activation" required>
+                                <label for="activation">Software activation</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="Driver_pdate" id="driver">
+                                <label for="driver">Driver Update</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="antivirus_setup" id="antivirus">
+                            <label for="antivirus">Antivirus Setup</label></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>System Health</legend>
+                    <table cellpadding="10px">
+                        <tr>
+                            <td><label for="RAM">Current RAM: </label></td>
+                           <td>
+                                <select name="RAM" id="ram">
+                                    <option value="">--Select RAM--</option>
+                                    <option value="2GB">2GB</option>
+                                    <option value="4GB">4GB</option>
+                                    <option value="8GB">8GB</option>
+                                    <option value="16GB +">16GB +</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="screenshot"> Screenshot of Error: </label></td>
+                            <td><input type="file" name="screenshot" accept="jpg/*, png/*,jpeg/*"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="detailed-problem">Detailed Problem:</label></td>
+                            <td><textarea cols="30" rows="3" name="detailed-problem" placeholder="Describe exactly what is happening"></textarea></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Book Appointment</legend>
+                    <table cellpadding="10px">
+                        <tr>
+                            <td><label for="date">Preferred Date:</label></td>
+                            <td><input type="date" name="date" id="date" min="2026-03-19"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="urgency">Urgency Level(1-5):</label></td>
+                            <td>
+                                <span id="slow">Slow</span>
+                                <input type="range" min="1" max="5" name="urgency" id="urgency" value="3">
+                                <span style="color: red;">Emergency!</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <button type="submit">Submit Request</button>
+                                <button type="reset" style="margin-left: 100px;">Clear Form</button>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+        </form>
+    </body>
+</html>

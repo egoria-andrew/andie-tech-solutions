@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AndieTech Solutions | Your Campus IT Partner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            
+            <div class="branding">
+                <div class="logo-circle">
+                    <i class="fas fa-microchip"></i> </div> 
+                <div class="brand-text">
+                    <h1 class="brand-name">Andie Tech Solutions</h1>
+                    <span class="tagline">"Your Trusted Campus IT Partner"</span>
+                </div>
+            </div>
+
+            <div class="nav-wrapper">
+                <nav class="nav-menu" id="nav-menu">
+                    <ul>
+                        <li><a href="index.html" class="nav-btn">Home</a></li>
+                        <li><a href="#services" class="nav-btn">Services</a></li>
+                        <li><a href="#tip" class="nav-btn">Tech Tips</a></li>
+                        <li><a href="fixes.html" class="nav-btn">Qiuck Fixes</a></li>
+                        <li><a href="#contact" class="nav-btn">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="menu-toggle" id="mobile-menu-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-flex">
+                
+                <div class="hero-text">
+                    <span class="badge">Based at Gulu University</span>
+                    <h2>Don't Let Tech Glitches  Slow You Down</h2>
+                    <p>
+                        Expert windows, MacOs &amp; Linux installation, password reset &amp; recovery, and software activation tailored for students.Get your laptop back in peak condition today.
+                    </p>
+                    
+                    <div class="hero-btns">
+                        <a href="https://wa.me/256782222306" class="btn btn-primary">
+                            <i class="fab fa-whatsapp"></i> Book a Fix Now
+                        </a>
+                        <a href="fixes.html" class="btn btn-secondary">Explore Quick Fixes</a>
+                    </div>
+                </div>
+
+                <div class="hero-img">
+                    <div class="img-placeholder">
+                        <img src="assets/hero-laptop.png" alt="Laptop showing Windows and Mac" onerror="this.style.display='none'">
+                        <div class="img-backup-box">💻 ANDIETECH</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="services">
+            </section>
+        <a href="service-form.html" target="_blank" ><button>Book Service</button></a>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AndieTech Solutions. Designed for Students, by a Student.</p>
+    </footer>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu-btn');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenu.classList.toggle('is-active');
+        });
+    </script>
+
+</body>
+</html>
