@@ -48,7 +48,7 @@ header{
     z-index: 10000;
 }
 .hero{
-    background-image: url("/assets/student.png");
+    background-image: url("student.png");
     background-attachment: scroll;
     background-size: auto;
     background-position: auto;
