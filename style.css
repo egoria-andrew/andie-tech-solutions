@@ -46,7 +46,7 @@ header{
     z-index: 10000;
 }
 .hero{
-    background-image: url("/assets/student.png");
+    background-image: url("student.png");
     background-attachment: scroll;
     background-size: auto;
     background-position: auto;
@@ -459,7 +459,7 @@ header{
     /*swap the image*/
     .hero{
         /* 1. Set the new abstract background */
-        background-image: url('assets/mobile.png') !important;
+        background-image: url('mobile.png') !important;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
