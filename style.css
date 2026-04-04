@@ -12,10 +12,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'SegoeUI',Roboto,Helvetica,Arial, sans-serif;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 html{
     scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
 }
 
 img{
@@ -24,44 +29,51 @@ img{
     display: block;
 }
 container{
-    max-width: min;
     margin: 0 auto;
     padding: 0 5%;
-    width: 90%;
+    width:90%;
 }
 section{
-    padding: 20px;
+    padding: 10px;
     justify-content: center;
 }
 header{
     background: var(--white);
     padding: 1px 0;
-    box-shadow: 0 20px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
     z-index: 10000;
 }
 .hero{
-    /*background-color: #f8faff;*/
-    background-image: url("student.png");
+    background-image: url("/assets/student.png");
+    background-attachment: scroll;
+    background-size: auto;
+    background-position: auto;
+    background-repeat: no-repeat;
+   
+    /*Layout fixes*/
     display: flex;
     align-items: center;
     min-height: 80vh;
-    /*background: linear-gradient(to right, #f8faff, #ffffff);*/
     padding: 120px 0;
-    border-bottom: 1px solid #dee2e6;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    border-bottom: 1px solid #ebeef1;
     
 }
 .hero-flex{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 60px;
 }
+
 .hero-text{
     flex: 1;
     align-items: center;
-    padding: 20px;
+    padding: 5;
 }
 .badge{
     background: rgba(0,123,255,0.1);
@@ -159,7 +171,11 @@ header{
 .nav-menu ul{
     display: flex;
     list-style: none;
-    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
 }
 /*.nav-menu{
     position: relative;
@@ -371,3 +387,112 @@ header{
     margin-top: 20px;
     font-weight: bold;
 }
+
+/* --- MOBILE NAV STYLES --- */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px; /* Adjust based on your header height */
+        left: -100%; /* Hide it off-screen to the left */
+        transition: all 0.5s ease;
+        background: #ffffff;
+        padding: 20px 0;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    /* When we add the 'active' class via JS, it slides in */
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    /* Styling the Hamburger Bars */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background: #333;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Animation: Turn hamburger into an 'X' when active */
+    .menu-toggle.is-active .bar:nth-child(2) { opacity: 0; }
+    .menu-toggle.is-active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .menu-toggle.is-active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+}
+
+/* Hide hamburger on Desktop */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    #nav-menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #f8f7fa;
+        z-index: 1000;
+    }
+    #nav-menu.active{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*swap the image*/
+    .hero{
+        /* 1. Set the new abstract background */
+        background-image: url('assets/mobile.png') !important;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        /* 2. Layout: Center everything for mobile */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+        min-height: 80vh;
+        padding: 40px 20px;
+        margin: 0;
+    }
+
+   /* .hero-flex {
+        /* 3. Make the text container full width since the background is abstract 
+        max-width: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px); 
+        padding: 20px;
+        border-radius: 15px;*/
+    }
+
+    .hero-tex h2{
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .hero-text p {
+        font-size: 15px;
+        color: #444;
+        margin-bottom: 25px;
+    }
