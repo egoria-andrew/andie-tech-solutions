@@ -321,7 +321,7 @@ header{
 .contact-details{
     list-style: none;
     margin-top: flex;
-    padding: 0;
+    padding: 10px;
 }
 .contact-details li{
     margin-bottom: 15px;
@@ -330,6 +330,12 @@ header{
     gap: 10px;
     font-size: 1.1rem;
     color: #555;
+    width: min(800px 90%);
+}
+.contact-details a{
+    text-decoration: none;
+    width: min(800px 90%);
+    
 }
 .contact-details i{
     color: var(--primary-blue);
@@ -338,7 +344,7 @@ header{
 }
 .cta-box{
     background: var(--white);
-    padding: 40px;
+    padding: 20px;
     border-radius: 15px;
     border: 1px solid #eee;
     text-align: center;
@@ -356,6 +362,7 @@ header{
     padding: 40px 10px 10px;
     margin-top: 80px;
 }
+
 .footer-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
@@ -401,8 +408,8 @@ header{
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 70px; 
-        left: -100%; 
+        top: 70px; /* Adjust based on your header height */
+        left: -100%; /*Hide it off-screen to the left */
         transition: all 0.5s ease;
         background: #ffffff;
         padding: 20px 0;
@@ -447,6 +454,9 @@ header{
         display: block;
         cursor: pointer;
         z-index: 1001;
+        border: 2px solid var(--dark-grey);
+        border-radius: 5px;
+        padding: 5px;
     }
     #nav-menu{
         display: none;
@@ -465,7 +475,6 @@ header{
 
     /*swap the image*/
     .hero{
-        /* 1. Set the new abstract background */
         background-image: url('mobile.png') !important;
         background-size: cover;
         background-position: center;
@@ -478,6 +487,16 @@ header{
         gap: 0;
     }
     .hero-text h2{
-        font-size: 40px;
+        font-size: 60px;
+    }
+    .contact-grid{
+    display: block;
+    flex-wrap: wrap;
+    gap: auto;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px;
+    width: min(800px 90%);
     }
 }
