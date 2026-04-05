@@ -47,7 +47,7 @@ header{
     z-index: 10000;
 }
 .hero{
-    background-image: url("/assets/student.png");
+    background-image: url("student.png");
     background-attachment: scroll;
     background-size: auto;
     background-position: auto;
@@ -401,8 +401,8 @@ header{
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 70px; /* Adjust based on your header height */
-        left: -100%; /*Hide it off-screen to the left */
+        top: 70px; 
+        left: -100%; 
         transition: all 0.5s ease;
         background: #ffffff;
         padding: 20px 0;
