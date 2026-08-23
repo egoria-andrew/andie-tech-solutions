@@ -218,7 +218,7 @@ h1,h2,h3 {
     padding: 27px;
     border: 1px solid var(--line);
     border-radius: 14px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.96);
     transition: 0.2s;
 }
 .service-card:hover {
@@ -337,10 +337,17 @@ h1,h2,h3 {
     object-fit: contain;
     object-position: left center;
     filter: brightness(1.15);
+    border:1px solid #3876eb;
+    border-right:3px solid #3876eb;
+    border-left:3px solid #3876eb;
+    border-radius: 20px;
+    background-color: #cecece;
+}
 }
 .footer-brand p {
     max-width: 410px;
     margin: 16px 0;
+    
 }
 .footer-brand > a,
 .footer-bottom a {
@@ -469,6 +476,7 @@ kbd {
     }
     .footer-brand {
         grid-column: 1/-1;
+        
     }
 }
 @media (max-width: 540px) {
