@@ -218,7 +218,7 @@ h1,h2,h3 {
     padding: 27px;
     border: 1px solid var(--line);
     border-radius: 14px;
-    background: rgba(255, 255, 255, 0.96);
+    background: rgba(234, 237, 252, 0.1);
     transition: 0.2s;
 }
 .service-card:hover {
@@ -343,7 +343,7 @@ h1,h2,h3 {
     border-radius: 20px;
     background-color: #cecece;
 }
-}
+
 .footer-brand p {
     max-width: 410px;
     margin: 16px 0;
