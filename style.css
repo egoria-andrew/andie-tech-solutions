@@ -216,9 +216,9 @@ h1,h2,h3 {
     display: flex;
     flex-direction: column;
     padding: 27px;
-    border: 1px solid var(--line);
+    border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 14px;
-    background: rgba(234, 237, 252, 0.1);
+    background: rgba(206, 210, 228, 0.1);
     transition: 0.2s;
 }
 .service-card:hover {
