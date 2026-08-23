@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#0b63ce" />
+        <title>Quick Fixes | Andie Tech Solutions</title>
+        <link rel="icon" type="image/png" href="assets/andie-tech-icon.png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body class="quick-page">
+
+        <!-- Site Header: Logo & Mobile Responsive Navigation -->
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">
+                    <img class="brand-logo" src="assets/andie-tech-wordmark.png" alt="Andie Tech Solutions"/>
+                </a>
+                
+                <button class="menu-toggle" type="button"aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+                    <span></span><span></span><span></span>
+                </button>
+                
+                <nav id="nav-menu" class="nav-menu">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#services">Services</a>
+                    <a class="active" href="fixes.html" aria-current="page">Quick Fixes</a>
+                    <a href="index.html#contact">Contact</a>
+                    <a class="nav-cta" href="https://wa.me/256782222306?text=Hello%20Andie%20Tech%2C%20I%20need%20help%20with%20my%20laptop.">Book on WhatsApp</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="quick-hero">
+                <div class="container">
+                    <p class="eyebrow">Try this first</p>
+                    <h1>Quick fixes for everyday tech trouble.</h1>
+                    <p>Simple steps you can try safely. If they do not solve the problem, send us a message.</p>
+                </div>
+            </section>
+
+            <!-- Quick Fixes Troubleshooter Grid -->
+            <section class="section">
+                <div class="container quick-grid">
+                    <article>
+                        <i class="fa-solid fa-wifi"></i>
+                        <h2>Wi-Fi will not connect</h2>
+                        <ol>
+                            <li>Turn Wi-Fi off and on again.</li>
+                            <li>Restart your laptop.</li>
+                            <li>Forget the network, then reconnect using the correct details.</li>
+                        </ol>
+                    </article>
+                    
+                    <article>
+                        <i class="fa-solid fa-gauge-high"></i>
+                        <h2>Laptop is very slow</h2>
+                        <ol>
+                            <li>Restart your laptop.</li>
+                            <li>Close unused browser tabs and programs.</li>
+                            <li>Check that storage is not almost full.</li>
+                        </ol>
+                    </article>
+                    
+                    <article>
+                        <i class="fa-solid fa-file-word"></i>
+                        <h2>Office says “View Only”</h2>
+                        <ol>
+                            <li>Check you are signed in to the correct account.</li>
+                            <li>Save a copy of your work before trying changes.</li>
+                            <li>Contact us for help with your licensed setup.</li>
+                        </ol>
+                    </article>
+                    
+                    <article>
+                        <i class="fa-solid fa-window-restore"></i>
+                        <h2>Closed a browser tab</h2>
+                        <ol>
+                            <li>Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>.</li>
+                            <li>Repeat to restore more recently closed tabs.</li>
+                        </ol>
+                    </article>
+                </div>
+            </section>
+        
+            <section class="contact-section">
+                <div class="container contact-panel">
+                    <div>
+                        <p class="eyebrow">Still stuck?</p>
+                        <h2>We can help.</h2>
+                        <p>Send a photo of the error screen for a quicker diagnosis.</p>
+                    </div>
+                    <a class="button button-whatsapp" href="https://wa.me/256782222306?text=Hello%20Andie%20Tech%2C%20I%20tried%20a%20quick%20fix%20but%20still%20need%20help."> <i class="fa-brands fa-whatsapp"></i>Chat on WhatsApp </a>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Footer: Brand Details & Contact Info -->
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/andie-tech-wordmark.png" alt="Andie Tech Solutions"/>
+                    <p>Your trusted campus IT partner. Fast, practical laptop and software support for Gulu University students.</p>
+                    <a href="https://wa.me/256782222306"><i class="fa-brands fa-whatsapp"></i> +256 782 222 306</a>
+                </div>
+                <div>
+                    <h2>Quick access</h2>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#services">Our services</a></li>
+                        <li><a href="fixes.html">Quick Fixes</a></li>
+                        <li><a href="index.html#contact">Book a service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>What we offer</h2>
+                    <ul class="footer-links footer-list">
+                        <li>Operating system installation</li>
+                        <li>Software setup</li>
+                        <li>Password &amp; access recovery</li>
+                        <li>Eduroam connection</li>
+                        <li>General technical support</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container footer-bottom">
+                <span>© 2026 Andie Tech Solutions. Designed for students, by a student.</span>
+                <a href="mailto:andietechsolutions@gmail.com">andietechsolutions@gmail.com</a>
+            </div>
+        </footer>
+
+        <!-- Mobile Navigation Menu Toggle Script -->
+        <script>
+            const b = document.querySelector(".menu-toggle"),
+            n = document.querySelector(".nav-menu");
+            
+            // Toggle menu visibility and update accessibility attributes
+            b.addEventListener("click", () => {
+                const o = b.getAttribute("aria-expanded") === "true";
+                b.setAttribute("aria-expanded", String(!o));
+                n.classList.toggle("open");
+            });
+            
+            // Automatically close the menu drawer when any link inside is clicked
+            n.querySelectorAll("a").forEach((a) =>
+                a.addEventListener("click", () => {
+                    b.setAttribute("aria-expanded", "false");
+                    n.classList.remove("open");
+                }),
+            );
+        </script>
+    </body>
+</html>

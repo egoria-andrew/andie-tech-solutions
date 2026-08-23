@@ -1,314 +1,297 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#007bff">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>AndieTech Solutions | Your Campus IT Partner</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b63ce" />
+    <meta name="description" content="Fast, student-friendly laptop and software support at Gulu University." />
+    <title>Andie Tech Solutions | Campus IT Support</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
 
-    <header>
-        <div class="header-container">
-                    
-            <div class="branding">
-                <div class="logo-circle">
-                    <i class="fas fa-laptop"></i>
-                </div>
+  <body>
+    <!-- Site Header: Logo & Mobile Responsive Navigation -->
+    <header class="site-header">
 
-                <div class="brand-text">
-                    <h1 class="brand-name">Andie Tech Solutions</h1>
-                    <span class="tagline">"Your Trusted Campus IT Partner"</span>
-                </div>
-            </div>
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Andie Tech Solutions home">
+          <img class="brand-logo" src="assets/andie-tech-wordmark.png" alt="Andie Tech Solutions"/>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        </button>
 
-            <div class="nav-wrapper">
-                <nav class="nav-menu" id="nav-menu">
-                    <ul>
-                        <li><a href="index.html" class="nav-btn">Home</a></li>
-                        <li><a href="#services" class="nav-btn">Our Services</a></li>
-                        <li><a href="#tip" class="nav-btn">Tech Tip</a></li>
-                        <li><a href="fixes.html" class="nav-btn">Quick Fixes</a></li>
-                        <li><a href="#contact" class="nav-btn">Contact</a></li>
-                    </ul>
-                </nav>
+        <nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
+          <a href="#services">Services</a>
+          <a href="fixes.html">Quick Fixes</a>
+          <a href="#contact">Contact</a>
+          <a class="nav-cta" href="https://wa.me/256782222306?text=Hello%20Andie%20Tech%2C%20I%20need%20help%20with%20my%20laptop.">Book on WhatsApp</a>
+        </nav>
 
-                <div class="menu-toggle" id="mobile-menu-btn">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-
-        </div>
+      </div>
     </header>
 
-    <main>
-        <section id="hero" class="hero">
-            <div class="container hero-flex">
-                
-                <div class="hero-text">
-                    <span class="badge">Based at Gulu University</span>
-                    <h2>Don't Let Tech Glitches  Slow You Down</h2>
-                    <p>
-                        Expert windows, MacOs &amp; Linux installation, password reset &amp; recovery, and software activation tailored for students.Get your laptop back in peak condition today.
-                    </p>
-                    
-                    <div class="hero-btns">
-                        <a href="https://wa.me/256782222306" class="btn btn-primary">
-                            <i class="fab fa-whatsapp"></i> Book a Fix Now
-                        </a>
-                        <a href="fixes.html" class="btn btn-secondary">Explore Quick Fixes</a>
-                    </div>
-                </div>
-
-                <div class="hero-img">
-                    <div class="img-placeholder">
-                        <!--<img src="assets/sudent.png" alt="Laptop showing Windows and Mac" onerror="this.style.display='none'">
-                    <div class="img-backup-box">💻 ANDIETECH</div>-->
-                    </div>
-                </div>
-
+    <main id="home">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow"><i class="fa-solid fa-location-dot"></i> Based at Gulu University</p>
+            <h1>Tech support that keeps your studies moving.</h1>
+            <p class="hero-copy">
+              From operating-system installs and essential software to Wi-Fi setup and
+              troubleshooting, get practical help for your laptop—fast.
+            </p>
+            <div class="button-row">
+              <a class="button button-primary" href="https://wa.me/256782222306?text=Hello%20Andie%20Tech%2C%20I%20need%20help%20with%20my%20laptop."><i class="fa-brands fa-whatsapp"></i> Book a fix</a>
+              <a class="button button-secondary" href="fixes.html"> Try Quick Fixes </a>
             </div>
-        </section>
+            <p class="trust-line">
+              <i class="fa-solid fa-bolt"></i> Student-friendly support &nbsp;
+              <i class="fa-solid fa-shield-halved"></i> Clear, careful service
+            </p>
+          </div>
 
-        <section id="services" class="services-section">
-            <div class="container">
-                <div class="services-header-intro">
-                    <h2 class="section-title">Our Specialized Services</h2>
-                    
-                    <p>
-                        As a fellow students at Gulu university, we understand exactly how a 
-                        single software glitch or network configuration issue can ruin your 
-                        academic flow. You don't have time for slow perfomance or "View-Only"
-                        errors when your research and  projects are due. 
-                    </p>
-                    <p>
-                        <strong>Andie Tech Solutions</strong> provides fast, reliable and specialized 
-                        IT support designed to keep your machine optimized for your degree. We focus on 
-                        delivering solutions that save you time, protect your data, and ensure you stay 
-                        ahead in your studies.
-                        <br> Take your time and view a range of services we offer.
-                    </p>
-                    
-                </div>
-                <div class="services-grid">
-                    <article class="service-card">
-                        <div class="service-img">
-                            <img src="os.png" alt="OS  installation">
-                        </div>
-                        <div class="service-info">
-                            <i class="fab fa-windows"></i><i class="fab fa-apple"></i><i class="fab fa-linux"></i> 
-                            <h3>Operating System installation</h3>
-                            <p>
-                                Professional installation of windows 10 & 11, macOS (Monterey, Ventura, Big Sur, Sonoma)
-                                and Linux distribution(Kali, Mint, Ubuntu).We also specialize in dual-boot configurations for developers and system repairs that preserve your academic data integrity.
-                            </p>
-                            
-                            <div class="service-price">
-                                <h4 class="Price">Price: UGX 30,000</h4>
-                                <a href="https://wa.me/256760216705" class="btn-small">Book Now</a>
-                            </div>
-                        </div>
-                    </article>
+          <aside class="hero-card" aria-label="What we can help with">
+            <img class="hero-art" src="assets/andie-tech-hero.png" alt="Andie Tech technology illustration"/>
+            <p class="hero-card-label">Need help today?</p>
+            <h2>Send a photo of the error on WhatsApp.</h2>
+            <p>We will help you identify the next best step.</p>
+          </aside>
+        </div>
+      </section>
 
-                    <article class="service-card">
-                        <div class="service-img">
-                            <img src="office.jpg" alt="software activation">
-                        </div>
-                        <div class="service-info">
-                            <i class="fas fa-key"></i>
-                            <h3>Software Activation</h3>
-                            <p>We resolve "View-Only" errors in Microsoft Office and windows permanently with genuine digital licenses. We also ensure all software is properly activated and optimized for your specific hardware. </p>
-                            
-                            <div class="service-price">
-                                <h4 class="Price">Price: UGX 10,000</h4>
-                                <a href="https://wa.me/256760216705" class="btn-small">Book Now</a>
-                            </div>
-                        </div>
-                    </article>
+      <!-- Services Section: List of Offered IT Services -->
+      <section id="services" class="section">
+        <div class="container">
+          <div class="section-intro">
+            <p class="eyebrow">What we do</p>
+            <h2>Reliable laptop support, made simple.</h2>
+            <p>Focused IT help for Gulu University students. So software trouble and connectivity issues do not interrupt your work.</p>
+          </div>
 
-                    <article class="service-card">
-                        <div class="service-img">
-                            <img src="office.jpg" alt="software installation">
-                        </div>
-                        <div class="service-info">
-                            <i class="fas fa-file"></i><i class="fas fa-compact-disc"></i>
-                            <h3>Software Installation</h3>
-                            <p>Seamless installation of essential academic tools, from Microsoft Office 365 to IDEs and Design Suites.</p>
-                            <div class="service-price">
-                                <h4 class="Price">Price: UGX 10,000</h4>
-                                <a href="https://wa.me/256760216705" class="btn-small">Book Now</a>
-                            </div>
-                        </div>
-                    </article>
+          <div class="services-grid">
+            <article class="service-card">
+              <i class="fa-brands fa-windows"></i>
+              <h3>Operating system installation</h3>
+              <p>
+                Windows, macOS, and Linux installations, updates, repairs, and dual-boot 
+                setup where suitable.
+              </p>
+              <div>
+                <strong>From UGX 15,000</strong>
+                <a href="https://wa.me/256782222306?text=Hello%20Andie%20Tech%2C%20I%20need%20an%20operating-system%20installation.">Book service <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </article>
 
-                    <article class="service-card">
-                        <div class="service-img">
-                            <img src="passwordjpg.jpg" alt="password recovery">
-                        </div>
-                        <div class="service-info">
-                            <i class="fas fa-user-shield"></i><i class="fas fa-key"></i>
-                            <h3>Password and Access Recovery</h3>
-                            <p>Are you locked out of your system? We provide secure password resets and account recovery for windows and Mac users. We also offer guidance and robust security measures to protect your research and personal files.</p>
-                            <div class="service-price">
-                                <h4 class="Price">Price: UGX 25,000</h4>
-                                <a href="https://wa.me/256760216705" class="btn-small">Book Now</a>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    <article class="service-card">
-                        <div class="service-img">
-                            <img src="eduroam.jpg" alt="wifi configuration">
-                        </div>
+            <article class="service-card">
+              <i class="fa-solid fa-key"></i>
+              <h3>Software activation &amp; setup</h3>
+              <p>
+                Help setting up properly licensed software and resolving common
+                Office access and configuration issues.
+              </p>
+              <div>
+                <strong>From UGX 10,000</strong><a href="https://wa.me/256782222306?text=Hello%20Andie%20Tech%2C%20I%20need%20software%20activation%20or%20setup%20help.">Book service <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </article>
 
-                        <div class="service-info">
-                            <i class="fas fa-wifi"></i><h3>Eduroam Connection</h3>
-                            <p>Having trouble connecting to the campus wifi? We will get you connected to the campus wifi free of charge.</p>
-                            <div class="service-price">
-                                <h4 class="Price">Price: FREE</h4>
-                                <a href="https://wa.me/256760216705" class="btn-small">Book Now</a>
-                            </div>
-                        </div>
+            <article class="service-card">
+              <i class="fa-solid fa-file-circle-plus"></i>
+              <h3>Software installation</h3>
+              <p>
+                Essential academic tools, Microsoft Office, IDEs, design
+                applications, and other software configured for your device.
+              </p>
+              <div>
+                <strong>From UGX 5,000</strong>
+                <a href="https://wa.me/256782222306?text=Hello%20Andie%20Tech%2C%20I%20need%20software%20installed.">Book service <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </article>
 
-                    </article>
+            <article class="service-card">
+              <i class="fa-solid fa-user-shield"></i>
+              <h3>Password &amp; access recovery</h3>
+              <p>
+                Guidance and recovery support when you are locked out of your
+                laptop or account.
+              </p>
+              <div>
+                <strong>From UGX 10,000</strong><a
+                  href="https://wa.me/256782222306?text=Hello%20Andie%20Tech%2C%20I%20need%20password%20or%20access%20recovery%20help.">Book service <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </article>
 
-                    <article class="service-card">
-                        <div class="service-img">
-                            <img src="IT.jpg" alt="Technical support">
-                        </div>
-                        <div class="service-info">
-                            <i class="fas fa-tools"></i>
-                            <h3>General Technical Support</h3>
-                            <p>Comprehensive troubleshooting for hardware malfunctions, slow performance, and network connectivity issues. Whether it's a "Blue Screen of Death" or a driver conflict, we diagnose and resolve it fast.</p>
-                            <div class="service-price">
-                                <h4 class="Price">Price: UGX 20,000</h4>
-                                <a href="https://wa.me/256760216705" class="btn-small">Book Now</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+            <article class="service-card">
+              <i class="fa-solid fa-wifi"></i>
+              <h3>Eduroam connection</h3>
+              <p>
+                Get connected to campus Wi-Fi and learn the correct settings for
+                your device.
+              </p>
+              <div>
+                <strong>Free</strong>
+                <a href="https://wa.me/256782222306?text=Hello%20Andie%20Tech%2C%20I%20need%20help%20connecting%20to%20Eduroam.">Book service <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              <h3>General technical support</h3>
+              <p>
+                Diagnosis for slow performance, driver issues, hardware
+                problems, and network trouble.
+              </p>
+              <div>
+                <strong>From UGX 20,000</strong>
+                <a href="https://wa.me/256782222306?text=Hello%20Andie%20Tech%2C%20I%20need%20general%20technical%20support.">Book service <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <i class="fa-solid fa-globe"></i>
+              <h3>Web &amp; digital solutions</h3>
+              <p>
+                Static portfolio websites, personal websites, and landing pages
+                for students and small businesses.
+              </p>
+              <div>
+                <strong>Ask for a quote</strong>
+                <a href="https://wa.me/256782222306?text=Hello%20Andie%20Tech%2C%20I%20need%20a%20website%20or%20landing%20page.">Start a project <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <i class="fa-solid fa-laptop-medical"></i>
+              <h3>Laptop repair &amp; upgrades</h3>
+              <p>
+                Help with hardware faults, slow laptops, storage upgrades,
+                memory upgrades, and practical repair advice.
+              </p>
+              <div>
+                <strong>Ask for a quote</strong>
+                <a href="https://wa.me/256782222306?text=Hello%20Andie%20Tech%2C%20I%20need%20a%20laptop%20repair%20or%20upgrade.">Book service <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <i class="fa-solid fa-network-wired"></i>
+              <h3>Network setup &amp; troubleshooting</h3>
+              <p>
+                Basic Wi-Fi and router setup, connection troubleshooting, and
+                support for small homes and businesses.
+              </p>
+              <div>
+                <strong>Ask for a quote</strong>
+                <a href="https://wa.me/256782222306?text=Hello%20Andie%20Tech%2C%20I%20need%20network%20setup%20or%20troubleshooting.">Book service <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Tip Promo Section -->
+      <section class="tip-section">
+        <div class="container">
+          <div class="tip-box">
+            <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+            <div>
+              <p class="eyebrow">Quick tech tip</p>
+              <h2>Closed a browser tab by mistake?</h2>
+              <p>
+                Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd> to
+                reopen your last closed tab.
+              </p>
             </div>
-        </section>
-        <section id="tip" class="tip-section">
-            <div class="container tip-box">
-                <div class="tip-header">
-                    <i class="fas fa-lightbulb"></i>
-                    <h2>Tech Tip of the Week</h2>
-                </div>
-                <div class="tip-content">
-                    <h3 id="current-tip-title">Accidental Tab Close<h3>
-                    <p id="current-tip-text">Don't panic!! Just press <strong>Ctrl + shift + T</strong> on your Keyboard, and your last tab pops right back like magic.</p>
-                </div>
-                <div class="tip-footer">
-                    <span>Posted by: Andie Tech solutions</span>
-                    <p>See more tip <a href="index2.html" target="_blank">Here</a></p>
-                </div>
-            </div>
-        </section>
+            <a href="fixes.html">More quick fixes <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </section>
 
-        <section id="contact" class="contact-section">
-            <div class="container contact-grid">
-                <div class="contact-info">
-                    <h2>Let's Get Your Tech Sorted</h2>
-                    <p>Ready to get that "View-Only" error fixed or install a fresh Operating System? Don't hesitate to reach out to me directly, am based here right in Gulu University.</p>
-                    
-                    <ul class="contact-details">
-                        <li>
-                            <i class="fas fa-envelope"></i><strong>Email:</strong><a href="mailto:andietechsolutions@gmail.com">andietechsolutions@gmail.com</a>
-                        </li>
-                        <li>
-                            <i class="fab fa-whatsapp"></i>
-                            <strong>WhatsApp:<a href=https://wa.me/256782222306>+256782222306</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <strong>Location:</strong>Gulu University main campus, Uganda
-                        </li>
-                        <li><i class="fas fa-clock"></i>
-                            <strong>Hours:</strong> Mon-Sun ( 8:00 AM - 6:00 PM)
-                        </li>
-                    </ul>
-
-                    <div class="contact-cta">
-                        <div class="cta-box">
-                            <h3>Need an Instant Fix?</h3>
-                            <p>The firstest way to reach me is via WhatsApp. Send a photo of your screen error for a quick diagnosis.</p>
-                            <a href="https://wa.me/256782222306" class="btn btn-whatsapp">
-                                <i class="fab fa-whatsapp"></i>Chat me on WhatsApp
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
+      <!-- Contact Banner & WhatsApp CTA Section -->
+      <section id="contact" class="contact-section">
+        <div class="container contact-panel">
+          <div>
+            <p class="eyebrow">Let’s get it sorted</p>
+            <h2>Need a hand with your laptop?</h2>
+            <p>
+              Message Andie Tech with a photo of the error or a short
+              description of the problem. We’ll help you get started.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-whatsapp" href="https://wa.me/256782222306?text=Hello%20Andie%20Tech%2C%20I%20need%20help%20with%20my%20laptop."><i class="fa-brands fa-whatsapp"></i> WhatsApp +256 782 222306</a>
+            <a class="email-link" href="mailto:andietechsolutions@gmail.com"><i class="fa-solid fa-envelope"></i>andietechsolutions@gmail.com</a>
+            <span><i class="fa-solid fa-location-dot"></i> Gulu University main campus, Uganda</span>
+          </div>
+        </div>
+      </section>
     </main>
 
-    
-
-    <footer class="main-footer">
-
-        <div class="container footer-grid">
-
-            <div class="footer-col">
-                <h3 class="footer-logo">Andie <span>Tech</span> Solutions</h3>
-                <p>"Your Trusted Campus IT Partner." Providing specialized software solutions and hardware recovery for the Gulu University commnunity</p>
-            </div>
-            
-            <div class="footer-col">
-                <h4>Quick Navigation</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#services">Our services</a></li>
-                    <li><a href="#tip">Tip of the Week</a></li>
-                    <li><a href="index2.html">Quick Fixes</a></li>
-                    <li><a href="#contact">Book A Service</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>What we offer</h4>
-                <ul>
-                    <li>Windows & Mac Installation</li>
-                    <li>Software Activation</li>
-                    <li>Software Installation</li>
-                    <li>Password & Data Recovery</li>
-                    <li>Campus WiFi configuration (Eduroam)</li>
-                </ul>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2026 AndieTech Solutions. Designed for Students, by a Student.</p>
-                <!--<div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-tiktok"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                </div>-->
-            </div>
+    <!-- Footer: Brand Details & Navigation Links -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="assets/andie-tech-wordmark.png" alt="Andie Tech Solutions"/>
+          <p>
+            Your trusted campus IT partner. Fast, practical laptop and software
+            support for Gulu University students.
+          </p>
+          <a href="https://wa.me/256782222306?text=Hello%20Andie%20Tech%2C%20I%20need%20help%20with%20my%20laptop."><i class="fa-brands fa-whatsapp"></i> +256 782 222 306</a>
         </div>
+
+        <div>
+          <h2>Quick access</h2>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Our services</a></li>
+            <li><a href="fixes.html">Quick Fixes</a></li>
+            <li><a href="#contact">Book a service</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>What we offer</h2>
+          <ul class="footer-links footer-list">
+            <li>Operating system installation</li>
+            <li>Software setup</li>
+            <li>Password &amp; access recovery</li>
+            <li>Eduroam connection</li>
+            <li>General technical support</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <span> © 2026 Andie Tech Solutions. Designed for students, by a student.</span>
+        <a href="mailto:andietechsolutions@gmail.com">andietechsolutions@gmail.com</a>
+      </div>
     </footer>
 
+    <!-- Mobile Navigation Menu Toggle Script -->
     <script>
-        const  menuBtn = document.getElementById('mobile-menu-btn');
-        const navMenu = document.getElementById('nav-menu');
-        
-        menuBtn.addEventListener('click',()=>{
-            menuBtn.classList.toggle('is-active');
-            navMenu.classList.toggle('active');
-        });
+      const b = document.querySelector(".menu-toggle"),
+        n = document.querySelector(".nav-menu");
 
-        document.querySelectorAll('#nav-menu a').forEach(link=>{
-            link.addEventListener('click',()=>{
-                menuBtn.classList.remove('is-active');
-                navMenu.classList.remove('active');
-            });
-        });
+      // Toggle menu visibility and update accessibility attributes
+      b.addEventListener("click", () => {
+        const o = b.getAttribute("aria-expanded") === "true";
+        b.setAttribute("aria-expanded", String(!o));
+        n.classList.toggle("open");
+      });
+
+      // Automatically close the menu drawer when any link inside is clicked
+      n.querySelectorAll("a").forEach((a) =>
+        a.addEventListener("click", () => {
+          b.setAttribute("aria-expanded", "false");
+          n.classList.remove("open");
+        }),
+      );
     </script>
-
-</body>
+  </body>
 </html>
